@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "738488489308",
+    "project_id": "eredzone-bd711",
+    "storage_bucket": "eredzone-bd711.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738488489308:android:812f91b4c8401a6eec9d99",
+        "android_client_info": {
+          "package_name": "com.example.red_zone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738488489308-rbjd2glb1l6cmaq1mtmrrimvsoa2lbt4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApXuEmRDtZpZXPD_wfq1HG40AdlFc0tfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738488489308-aqe0c8svfl5eauc1i98l5ibll8p7b92p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "738488489308-7gsajt4dpmbestcsfm8rl70dh7jsg114.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.redZone"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

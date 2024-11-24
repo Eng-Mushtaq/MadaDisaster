@@ -1,0 +1,95 @@
+name: red_zone
+description: "“RedZone” - Real-Time Natural Disasters Prevention Alerts and Risk Management Mobile Application"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.4 <4.0.0'
+
+#--------------- PACKAGES ------------------#
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Utility Packages
+  http: 
+  intl: 
+  logger: 
+  url_launcher:
+  flutter_native_splash: 
+  smooth_page_indicator: 
+  carousel_slider:
+  lottie: 
+  connectivity_plus: 
+  shimmer: 
+  image_picker: 
+  webview_flutter: 
+  flutter_rating_bar: 
+  readmore: 
+
+  # Icons
+  cupertino_icons: 
+  iconsax_flutter: 
+
+  # State Management
+  get: 
+  get_storage: 
+  cached_network_image:
+
+  # Firebase
+  firebase_core: 
+  firebase_auth: 
+  cloud_firestore: 
+  google_sign_in: 
+  firebase_storage: 
+
+  # Google Maps
+  location: 
+  google_maps_flutter: 
+  geocoding: 
+  firebase_messaging: 
+  shared_preferences: 
+
+
+  #--------------- ./ PACKAGES END ------------------#
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: 
+
+
+flutter:
+  uses-material-design: true
+
+  #--------------- LOCAL ASSETS ------------------#
+
+  assets:
+    - assets/images/logos/
+    - assets/images/on_boarding_images/
+    - assets/images/animations/
+    - assets/images/user/
+    - assets/images/banners/
+    - assets/images/products/
+    - assets/images/reviews/
+
+  #--------------- LOCAL FONTS ------------------#
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 800
