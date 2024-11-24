@@ -1,6 +1,6 @@
 # Madad Disaster Final Project
 
-“RedZone” - Real-Time Natural Disasters Prevention Alerts and Risk Management Mobile Application
+“Madad” - Real-Time Natural Disasters Prevention Alerts and Risk Management Mobile Application
 
 ## Getting Started
 
