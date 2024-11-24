@@ -1,4 +1,4 @@
-# red_zone
+# Madad Disaster Final Project
 
 “RedZone” - Real-Time Natural Disasters Prevention Alerts and Risk Management Mobile Application
 
@@ -15,7 +15,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-# Project Start 2024.01.23
+# Project Start 2024.11.1
 
 ### Native Splash Screen setup
 
