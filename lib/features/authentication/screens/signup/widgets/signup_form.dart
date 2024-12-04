@@ -26,9 +26,12 @@ class TSignupForm extends StatelessWidget {
                 // First Name
                 child: TextFormField(
                   controller: controller.firstName,
-                  validator: (value) => TValidator.validateEmptyText(TTexts.firstName, value),
+                  validator: (value) =>
+                      TValidator.validateEmptyText(TTexts.firstName, value),
                   expands: false,
-                  decoration: const InputDecoration(labelText: TTexts.firstName, prefixIcon: Icon(Iconsax.user)),
+                  decoration: const InputDecoration(
+                      labelText: TTexts.firstName,
+                      prefixIcon: Icon(Iconsax.user)),
                 ),
               ),
 
@@ -38,9 +41,12 @@ class TSignupForm extends StatelessWidget {
               Expanded(
                 child: TextFormField(
                   controller: controller.lastName,
-                  validator: (value) => TValidator.validateEmptyText(TTexts.lastName, value),
+                  validator: (value) =>
+                      TValidator.validateEmptyText(TTexts.lastName, value),
                   expands: false,
-                  decoration: const InputDecoration(labelText: TTexts.lastName, prefixIcon: Icon(Iconsax.user)),
+                  decoration: const InputDecoration(
+                      labelText: TTexts.lastName,
+                      prefixIcon: Icon(Iconsax.user)),
                 ),
               ),
             ],
@@ -50,9 +56,12 @@ class TSignupForm extends StatelessWidget {
           // Username
           TextFormField(
             controller: controller.username,
-            validator: (value) => TValidator.validateEmptyText(TTexts.username, value),
+            validator: (value) =>
+                TValidator.validateEmptyText(TTexts.username, value),
             expands: false,
-            decoration: const InputDecoration(labelText: TTexts.username, prefixIcon: Icon(Iconsax.user_edit)),
+            decoration: const InputDecoration(
+                labelText: TTexts.username,
+                prefixIcon: Icon(Iconsax.user_edit)),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
@@ -60,7 +69,8 @@ class TSignupForm extends StatelessWidget {
           TextFormField(
             controller: controller.email,
             validator: (value) => TValidator.validateEmail(value),
-            decoration: const InputDecoration(labelText: TTexts.email, prefixIcon: Icon(Iconsax.direct)),
+            decoration: const InputDecoration(
+                labelText: TTexts.email, prefixIcon: Icon(Iconsax.direct)),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
@@ -68,7 +78,8 @@ class TSignupForm extends StatelessWidget {
           TextFormField(
             controller: controller.phoneNumber,
             validator: (value) => TValidator.validatePhoneNumber(value),
-            decoration: const InputDecoration(labelText: TTexts.phoneNo, prefixIcon: Icon(Iconsax.call)),
+            decoration: const InputDecoration(
+                labelText: TTexts.phoneNo, prefixIcon: Icon(Iconsax.call)),
           ),
           const SizedBox(height: TSizes.spaceBtwInputFields),
 
@@ -82,8 +93,11 @@ class TSignupForm extends StatelessWidget {
                   labelText: TTexts.password,
                   prefixIcon: const Icon(Iconsax.password_check),
                   suffixIcon: IconButton(
-                    onPressed: () => controller.hidePassword.value = !controller.hidePassword.value,
-                    icon: Icon(controller.hidePassword.value ? Iconsax.eye_slash : Iconsax.eye),
+                    onPressed: () => controller.hidePassword.value =
+                        !controller.hidePassword.value,
+                    icon: Icon(controller.hidePassword.value
+                        ? Iconsax.eye_slash
+                        : Iconsax.eye),
                   )),
             ),
           ),

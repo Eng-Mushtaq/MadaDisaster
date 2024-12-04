@@ -25,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -47,29 +41,51 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBLMaPkFts7BXuj_5x7I_zLuccotzFpL2o',
-    appId: '1:738488489308:web:00f91f5ed0bbf92bec9d99',
-    messagingSenderId: '738488489308',
-    projectId: 'eredzone-bd711',
-    authDomain: 'eredzone-bd711.firebaseapp.com',
-    storageBucket: 'eredzone-bd711.appspot.com',
+    apiKey: 'AIzaSyBDe58P1TGmaZ5V044Yt-EqhpnShbP-jzU',
+    appId: '1:367225705603:web:232947ef62c97da64177b6',
+    messagingSenderId: '367225705603',
+    projectId: 'madad-21c30',
+    authDomain: 'madad-21c30.firebaseapp.com',
+    storageBucket: 'madad-21c30.firebasestorage.app',
+    measurementId: 'G-DDLS6B3F2E',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyApXuEmRDtZpZXPD_wfq1HG40AdlFc0tfQ',
-    appId: '1:738488489308:android:812f91b4c8401a6eec9d99',
-    messagingSenderId: '738488489308',
-    projectId: 'eredzone-bd711',
-    storageBucket: 'eredzone-bd711.appspot.com',
+    apiKey: 'AIzaSyAfNQwqrj4tFVFFuPeOWwaesccla0etNlI',
+    appId: '1:367225705603:android:c24130dd2065dcc44177b6',
+    messagingSenderId: '367225705603',
+    projectId: 'madad-21c30',
+    storageBucket: 'madad-21c30.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBwikf7RgbH9kGglGitIQlK9-FLfNYI5Hc',
-    appId: '1:738488489308:ios:7557108d82ff3601ec9d99',
-    messagingSenderId: '738488489308',
-    projectId: 'eredzone-bd711',
-    storageBucket: 'eredzone-bd711.appspot.com',
-    iosClientId: '738488489308-7gsajt4dpmbestcsfm8rl70dh7jsg114.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDOp-gK2ShJkTMMQ0ZAIycL_EVlrDSebUE',
+    appId: '1:367225705603:ios:92bf92bff0456a914177b6',
+    messagingSenderId: '367225705603',
+    projectId: 'madad-21c30',
+    storageBucket: 'madad-21c30.firebasestorage.app',
+    iosClientId: '367225705603-5t4loonibeqbe93mk4s84r3949q2a4ch.apps.googleusercontent.com',
     iosBundleId: 'com.example.redZone',
   );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDOp-gK2ShJkTMMQ0ZAIycL_EVlrDSebUE',
+    appId: '1:367225705603:ios:92bf92bff0456a914177b6',
+    messagingSenderId: '367225705603',
+    projectId: 'madad-21c30',
+    storageBucket: 'madad-21c30.firebasestorage.app',
+    iosClientId: '367225705603-5t4loonibeqbe93mk4s84r3949q2a4ch.apps.googleusercontent.com',
+    iosBundleId: 'com.example.redZone',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyBDe58P1TGmaZ5V044Yt-EqhpnShbP-jzU',
+    appId: '1:367225705603:web:e5f25a06c2eb74744177b6',
+    messagingSenderId: '367225705603',
+    projectId: 'madad-21c30',
+    authDomain: 'madad-21c30.firebaseapp.com',
+    storageBucket: 'madad-21c30.firebasestorage.app',
+    measurementId: 'G-409RFYB8BH',
+  );
+
 }

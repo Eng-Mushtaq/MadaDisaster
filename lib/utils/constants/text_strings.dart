@@ -11,12 +11,16 @@ class TTexts {
 
   // -- OnBoarding Texts
   static const String onBoardingTitle1 = "Stay Alert to Disasters";
-  static const String onBoardingTitle2 = "Community Connection: Always Stay Linked";
+  static const String onBoardingTitle2 =
+      "Community Connection: Always Stay Linked";
   static const String onBoardingTitle3 = "Empower Mutual Support";
 
-  static const String onBoardingSubTitle1 = "Welcome to RedZone! Stay informed and prepared with real-time updates and valuable resources to navigate through any disaster.";
-  static const String onBoardingSubTitle2 = "Your gateway to staying connected with your community, fostering resilience, and supporting each other through every challenge.";
-  static const String onBoardingSubTitle3 = "Let's work together to uplift one another, ensuring that we're always there to lend a helping hand when it's needed most.";
+  static const String onBoardingSubTitle1 =
+      "Welcome to RedZone! Stay informed and prepared with real-time updates and valuable resources to navigate through any disaster.";
+  static const String onBoardingSubTitle2 =
+      "Your gateway to staying connected with your community, fostering resilience, and supporting each other through every challenge.";
+  static const String onBoardingSubTitle3 =
+      "Let's work together to uplift one another, ensuring that we're always there to lend a helping hand when it's needed most.";
 
   // -- Authentication Forms
   static const String firstName = "First Name";
@@ -41,18 +45,24 @@ class TTexts {
 
   // -- Authentication Headings
   static const String loginTitle = "Welcome back,";
-  static const String loginSubTitle = "Discover Limitless Choices and Unmatched Convenience.";
+  static const String loginSubTitle =
+      "Discover Limitless Choices and Unmatched Convenience.";
   static const String signupTitle = "Let’s create your account";
   static const String forgetPasswordTitle = "Forget password";
-  static const String forgetPasswordSubTitle = "Don’t worry sometimes people can forget too, enter your email and we will send you a password reset link.";
+  static const String forgetPasswordSubTitle =
+      "Don’t worry sometimes people can forget too, enter your email and we will send you a password reset link.";
   static const String changeYourPasswordTitle = "Password Reset Email Sent";
-  static const String changeYourPasswordSubTitle = "Your Account Security is Our Priority! We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
+  static const String changeYourPasswordSubTitle =
+      "Your Account Security is Our Priority! We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
   static const String confirmEmail = "Verify your email address!";
   static const String confirmEmailSubTitle =
       "Congratulations! Your account awaits: Verify your email to start using the RedZone application and experience an amazing lifesaving agent for the new era.";
-  static const String emailNotReceivedMessage = "Didn’t get the email? Check your junk/spam or resend it.";
-  static const String yourAccountCreatedTitle = "Your account successfully created!";
-  static const String yourAccountCreatedSubTitle = "Welcome to Your Ultimate Life-saving Destination: Your Account has been Created. Unleash the Joy of a Seamless, Smart Future.";
+  static const String emailNotReceivedMessage =
+      "Didn’t get the email? Check your junk/spam or resend it.";
+  static const String yourAccountCreatedTitle =
+      "Your account successfully created!";
+  static const String yourAccountCreatedSubTitle =
+      "Welcome to Your Ultimate Life-saving Destination: Your Account has been Created. Unleash the Joy of a Seamless, Smart Future.";
 
   // -- Product
   static const String popularProducts = "Popular Products";

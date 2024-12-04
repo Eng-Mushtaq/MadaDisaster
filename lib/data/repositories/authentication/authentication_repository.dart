@@ -285,8 +285,8 @@ class AuthenticationRepository extends GetxController {
     if (user != null) {
       if (user.emailVerified) {
         // Check if the user is an admin
-        if (user.email == 'avishkadulanjana377@gmail.com') {
-          // Change 'avishkadulanjana377@gmail.com' to the email of admin user
+        if (user.email == 'Jinan.alshehri@gmail.com') {
+          
           Get.offAll(() => const AdminNavigationMenu());
         } else {
           Get.offAll(() => const NavigationMenu());
