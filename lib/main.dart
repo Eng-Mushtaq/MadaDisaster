@@ -40,5 +40,7 @@ Future<void> main() async {
     (FirebaseApp value) => Get.put(DisasterPredictionRepository()),
   );
 
+
+
   runApp(const App());
 }
