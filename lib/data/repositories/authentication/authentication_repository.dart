@@ -286,10 +286,9 @@ class AuthenticationRepository extends GetxController {
       if (user.emailVerified) {
         // Check if the user is an admin
         if (user.email == 'Jinan.alshehri@gmail.com') {
-          
-          Get.offAll(() => const AdminNavigationMenu());
-        } else {
           Get.offAll(() => const NavigationMenu());
+        } else {
+          Get.offAll(() => const AdminNavigationMenu());
         }
       } else {
         Get.offAll(() => VerifyEmailScreen(email: _auth.currentUser?.email));
@@ -300,8 +299,10 @@ class AuthenticationRepository extends GetxController {
 
       // check if its the first time launching the app
       deviceStorage.read('isFirstTime') != true
-          ? Get.offAll(() => const LoginScreen()) // Redirect to Login Screen if not the first time
-          : Get.offAll(() => const OnBoardingScreen() // Redirect to OnBoarding Screen if the first time
+          ? Get.offAll(() =>
+              const LoginScreen()) // Redirect to Login Screen if not the first time
+          : Get.offAll(() =>
+                  const OnBoardingScreen() // Redirect to OnBoarding Screen if the first time
               );
     }
 
@@ -315,9 +316,11 @@ class AuthenticationRepository extends GetxController {
   /* ------------------------Email & Password sign in ------------------------ */
 
   // [EmailAuthentication] - SignIn
-  Future<UserCredential> loginWithEmailAndPassword(String email, String password) async {
+  Future<UserCredential> loginWithEmailAndPassword(
+      String email, String password) async {
     try {
-      return await _auth.signInWithEmailAndPassword(email: email, password: password);
+      return await _auth.signInWithEmailAndPassword(
+          email: email, password: password);
     } on FirebaseAuthException catch (e) {
       throw TFirebaseAuthException(e.code).message;
     } on FirebaseException catch (e) {
@@ -329,12 +332,14 @@ class AuthenticationRepository extends GetxController {
     } catch (e) {
       throw 'Something went wrong! Please try again!';
     }
-  }      
+  }
 
   // [EmailAuthentication] - REGISTER
-  Future<UserCredential> registerWithEmailAndPassword(String email, String password) async {
+  Future<UserCredential> registerWithEmailAndPassword(
+      String email, String password) async {
     try {
-      return await _auth.createUserWithEmailAndPassword(email: email, password: password);
+      return await _auth.createUserWithEmailAndPassword(
+          email: email, password: password);
     } on FirebaseAuthException catch (e) {
       throw TFirebaseAuthException(e.code).message;
     } on FirebaseException catch (e) {
@@ -368,10 +373,12 @@ class AuthenticationRepository extends GetxController {
 
   // [ReAuthentication] - Re Authentication User
 
-  Future<void> reAuthenticateWithEmailAndPassword(String email, String password) async {
+  Future<void> reAuthenticateWithEmailAndPassword(
+      String email, String password) async {
     try {
       // Create credentials
-      AuthCredential credential = EmailAuthProvider.credential(email: email, password: password);
+      AuthCredential credential =
+          EmailAuthProvider.credential(email: email, password: password);
 
       // Re Authenticate
       await _auth.currentUser!.reauthenticateWithCredential(credential);
@@ -415,7 +422,8 @@ class AuthenticationRepository extends GetxController {
       final GoogleSignInAccount? userAccount = await GoogleSignIn().signIn();
 
       // Obtain the auth details from the request
-      final GoogleSignInAuthentication? googleAuth = await userAccount?.authentication;
+      final GoogleSignInAuthentication? googleAuth =
+          await userAccount?.authentication;
 
       // Create a new credential
       final credentials = GoogleAuthProvider.credential(
