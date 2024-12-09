@@ -289,6 +289,7 @@ class AuthenticationRepository extends GetxController {
           Get.offAll(() => const NavigationMenu());
         } else {
           Get.offAll(() => const AdminNavigationMenu());
+          
         }
       } else {
         Get.offAll(() => VerifyEmailScreen(email: _auth.currentUser?.email));
